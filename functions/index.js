@@ -154,10 +154,10 @@ exports.blockNoASUser = functions.auth.user().beforeSignIn(user => {
       'Email not verified'
     );
   }
-  if (!user.email.endsWith('@antistatique.net')) {
+/*   if (!user.email.endsWith('@antistatique.net')) {
     throw new functions.auth.HttpsError(
       'out-of-range',
       'Not an Antistatique user'
     );
-  }
+  } */
 });
